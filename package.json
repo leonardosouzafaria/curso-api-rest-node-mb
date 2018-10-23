@@ -1,0 +1,23 @@
+{
+  "name": "curso-api-rest-node-mb",
+  "version": "1.0.0",
+  "description": "curso de api rest na plataforma node do marco bruno - collabcode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardosouzafaria/curso-api-rest-node-mb.git"
+  },
+  "keywords": [
+    "api",
+    "rest"
+  ],
+  "author": "Leonardod de Souza Faria",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/leonardosouzafaria/curso-api-rest-node-mb/issues"
+  },
+  "homepage": "https://github.com/leonardosouzafaria/curso-api-rest-node-mb#readme"
+}
