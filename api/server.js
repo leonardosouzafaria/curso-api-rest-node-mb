@@ -27,6 +27,10 @@ server.get( '/collabs', ( req, res ) => {
     res.send(collabs);
 } );
 
+server.use( ( req, res ) => {
+    res.send( { msg: "Essa rota não tem funcionálidade" } );
+} )
+
 server.listen( port, () => {
     console.log(`servidor está de na url: http://localhost:${port}`);
     console.log("Para derrubar o servidor  aperte CTRL + C");
