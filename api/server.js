@@ -4,13 +4,28 @@ const port = 8080;
 
 const server = express();
 
-server.get("/", ( request, response ) => {
-    response.send("<h1>Home</h1>");
-});
+//Simulação do banco
+const collabs = [
+    {
+        nick: "leosouzaf",
+        quantidade: 100
+    },
+    
+    {
+        nick: "ana",
+        quantidade:50
+    },
 
-server.get("/foto", ( request, response ) => {
-    response.send("<h1>Foto</h1>");
-});
+    {
+        nick: "tati",
+        quantidade: 10
+    }
+]
+
+//endpoints
+server.get( '/collabs', ( req, res ) => {
+    res.send(collabs);
+} );
 
 server.listen( port, () => {
     console.log(`servidor está de na url: http://localhost:${port}`);
